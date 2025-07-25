@@ -1,0 +1,197 @@
+body {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-card {
+    max-width: 420px;
+    width: 100%;
+    background: #fff;
+    padding: 2.5rem 2rem 1.5rem 2rem;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.14);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.header-user {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #3a7bd5;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    color: #3a7bd5;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.add-task-group {
+    display: flex;
+    background: #f7fbff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(31, 38, 135, 0.06);
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.add-task-group input[type="text"] {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.08rem;
+    flex: 1;
+    font-family: inherit;
+    padding: 0.5rem 0.2rem;
+}
+.add-task-group input[type="text"]::placeholder {
+    color: #b5c6e0;
+}
+.add-task-group button {
+    background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    margin-left: 0.5rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(58, 123, 213, 0.08);
+    font-size: 1rem;
+}
+.add-task-group button:hover {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+    box-shadow: 0 4px 16px rgba(58, 123, 213, 0.15);
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3a7bd5;
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.list-group {
+    margin-bottom: 0.5rem;
+}
+.list-group-item {
+    font-size: 1.08rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 8px rgba(31, 38, 135, 0.06);
+    background: #f7fbff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    transition: box-shadow 0.2s, background 0.2s;
+}
+.list-group-item:hover {
+    background: #e0eafc;
+    box-shadow: 0 4px 16px rgba(58, 123, 213, 0.10);
+}
+
+.task-actions .btn {
+    margin-left: 0.4rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.8rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-success, .btn-warning, .btn-danger, .btn-outline-danger {
+    border-radius: 8px;
+}
+.btn-success:hover, .btn-warning:hover, .btn-danger:hover, .btn-outline-danger:hover {
+    filter: brightness(1.1);
+}
+
+.text-decoration-line-through {
+    color: #b5c6e0;
+    text-decoration: line-through;
+}
+
+.empty-state {
+    text-align: center;
+    color: #b5c6e0;
+    font-size: 1.1rem;
+    margin: 1.2rem 0 0.7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empty-state-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.5;
+}
+
+.logout-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.2rem;
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+    background: linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%);
+    color: #a94442;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 0;
+    box-shadow: 0 2px 8px rgba(238, 156, 167, 0.10);
+    transition: background 0.2s, color 0.2s;
+}
+.logout-btn:hover {
+    background: linear-gradient(90deg, #ffdde1 0%, #ee9ca7 100%);
+    color: #fff;
+}
+
+.alert-danger {
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ffdde1 0%, #ee9ca7 100%);
+    color: #a94442;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+::-webkit-input-placeholder { color: #b5c6e0; }
+::-moz-placeholder { color: #b5c6e0; }
+:-ms-input-placeholder { color: #b5c6e0; }
+::placeholder { color: #b5c6e0; }
+
+@media (max-width: 600px) {
+    .todo-card {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+        margin: 1.2rem 0;
+    }
+}
+
+.auth-card .form-control {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+} 
