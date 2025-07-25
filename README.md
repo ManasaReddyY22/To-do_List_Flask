@@ -23,13 +23,6 @@ A simple and responsive To-Do List web application built using **Flask**, **Mong
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots here (optional):
-> ![Login Page](screenshots/login.png)
-> ![Dashboard](screenshots/dashboard.png)
-
----
 
 ## 🛠️ Installation & Setup
 
